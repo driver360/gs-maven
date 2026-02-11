@@ -24,6 +24,6 @@ jobs:
           cache: maven
 
       - name: Build & Deploy
-        run: ./mvnw -B deploy
+        run:  mvn -B deploy
         env:
           GITHUB_TOKEN: ${{ github.token }}
