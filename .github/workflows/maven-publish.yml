@@ -23,7 +23,6 @@ jobs:
           java-version: 8
           cache: maven
 
-      - name: Build & Deploy
-        run:  mvn -B deploy
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+      - name: clean pacakge
+        run:  mvn clean package
+  
